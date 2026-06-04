@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>To My Beautiful Dancer</title>
+    
+    <style>
+        /* Moving romantic background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #f6d365, #fda085);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            color: #4a4a4a;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Beautiful glowing glass card */
+        .card {
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 30px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(255, 154, 158, 0.3), 
+                        inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+            max-width: 85%;
+            width: 340px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); 
+            z-index: 10;
+            animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+            margin: 40px 0;
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(40px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Cute circle at the top */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin: -80px auto 20px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff4b82;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #ff4b82;
+        }
+
+        /* Styling for the Safe Journey text */
+        .safe-journey {
+            color: #833ab4; /* A beautiful vibrant purple */
+            font-weight: 800; /* Extra bold */
+            font-size: 22px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Elegant button */
+        .btn {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 8px 20px rgba(255, 117, 140, 0.4);
+            -webkit-tap-highlight-color: transparent; 
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:active {
+            transform: scale(0.92);
+            box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
+        }
+
+        /* Floating elements - z-index is 999 to float in front */
+        .emoji-float {
+            position: absolute;
+            font-size: 30px;
+            bottom: -50px;
+            animation: floatUp 4s ease-in-out forwards;
+            z-index: 999;
+            opacity: 0.9;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-110vh) scale(1.5) rotate(25deg); opacity: 0; }
+        }
+
+        /* The hidden message section */
+        .hidden-message {
+            display: none; 
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1.5px dashed rgba(255, 75, 130, 0.3);
+            font-size: 15px;
+            color: #ff4b82;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .show-message {
+            display: block;
+            animation: fadeInReveal 0.8s ease forwards;
+        }
+
+        @keyframes fadeInReveal {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon-circle">💃🏽</div>
+        <h1>My Beautiful Dancer ✨</h1>
+        
+        <p>You are going to Kolkata for your dance program ✈️, and I am so, so happy for you. I know how much you love dancing 🩰 and how hard you have worked for this.</p>
+        
+        <p>When you are on that stage, I know you will shine the brightest 🌟. Go and win everyone's heart there, <span class="highlight">just like you won mine ❤️.</span></p>
+
+        <p>But honestly, I am already missing you 🥺. The days will feel so long without your smile, your voice, and your presence. Who will I bother when you are far away? 🤭</p>
+
+        <p>I will look our Separation 🤕 as a test of a little patience, because in just 5 or 6 months, we will be separated from each other 😭😭</p>
+
+        <p>Please promise me you will take care of yourself. Eat on time 🥗, rest well 😴, and do not take too much stress. Just enjoy every moment ✨. Have fun with your friends there.</p>
+
+        <p>I will be counting the hours ⏳ until you come back to me. Best of luck, my love! 💕</p>
+
+        <div class="safe-journey">Safe Journey! ✈️</div>
+
+        <button id="hugButton" class="btn" onclick="showerLove()">Tap for a Hug 🤗</button>
+
+        <div id="secretNote" class="hidden-message">
+            *Wrapping my arms tightly around you right now!* <br> 
+            I love you so much. Have the safest trip! 🥺💕
+        </div>
+    </div>
+
+    <script>
+        function showerLove() {
+            const secretNote = document.getElementById('secretNote');
+            secretNote.classList.add('show-message');
+
+            const hugButton = document.getElementById('hugButton');
+            hugButton.innerText = "Hug Sent! 💖";
+
+            const emojis = ['❤️', '💖', '✨', '🌸', '😭', '🥺', '🌹'];
+            
+            for (let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    const el = document.createElement('div');
+                    el.classList.add('emoji-float');
+                    el.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                    
+                    el.style.left = Math.random() * 100 + 'vw';
+                    el.style.animationDuration = (Math.random() * 3 + 2.5) + 's';
+                    
+                    document.body.appendChild(el);
+
+                    setTimeout(() => {
+                        el.remove();
+                    }, 5000);
+                }, i * 120); 
+            }
+        }
+
+        setTimeout(() => {
+            const emojis = ['✨', '💖', '🌸'];
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    const el = document.createElement('div');
+                    el.classList.add('emoji-float');
+                    el.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                    el.style.left = Math.random() * 100 + 'vw';
+                    el.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    document.body.appendChild(el);
+                    setTimeout(() => el.remove(), 5000);
+                }, i * 150);
+            }
+        }, 800);
+    </script>
+
+</body>
+</html>
